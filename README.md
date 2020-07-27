@@ -1,2 +1,2 @@
 # Facebook-Video-Downloader
-Facebook video downloader downloads only the public videos of Facebook.
+Facebook Video Downloader only downloads the public videos of Facebook.
