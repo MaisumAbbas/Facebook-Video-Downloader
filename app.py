@@ -16,7 +16,6 @@ def show_index_html():
 @app.route('/send_data', methods = ['POST'])
 def get_data_from_html():
         fbUrl = request.form['fbUrl']
-        #value jari hai print ni hori
         if fbUrl != '':
             if request.form['quality'] == '':
                 pass
@@ -116,7 +115,7 @@ def download_audio(quality):
     t.close()
     ctypes.windll.user32.MessageBoxW(0, "Audio Downloaded Successfully", "Success", 0)
 
-#check HD and SD Availability Check - ERROR
+#check HD and SD Availability Check
 def main(list, quality):
     try:
         if quality == 'HD' and 1 in list and 2 in list:
